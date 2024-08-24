@@ -51,10 +51,6 @@ class SplashScreen extends StatelessWidget {
                       fontSize: 32,
                       fontWeight: FontWeight.bold),
                 ),
-
-
-
-
                 const SizedBox(
                   height: 20,
                 ),
