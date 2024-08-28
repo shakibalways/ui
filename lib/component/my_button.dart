@@ -21,14 +21,14 @@ class MyButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: color ?? Color(int.parse(RColors.buttonColor))),
+            color: color ?? RColors.buttonColor),
         child: Center(
           child: Text(
            text,
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
-                color: Color(int.parse(RColors.bColors))),
+                color: RColors.bColors),
           ),
         ),
       ),
