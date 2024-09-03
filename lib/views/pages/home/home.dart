@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:splash_login_sign_up_ui/controller/api/all_shop_products.dart';
-import 'package:splash_login_sign_up_ui/controller/api/api_url.dart';
-import 'package:splash_login_sign_up_ui/controller/api/product_discription.dart';
 import 'package:splash_login_sign_up_ui/controller/getx/all_shop_product.dart';
-import 'package:splash_login_sign_up_ui/model/product.dart';
-import 'package:splash_login_sign_up_ui/model/product_discription.dart';
 import 'package:splash_login_sign_up_ui/views/pages/cart/show_product.dart';
 import 'package:splash_login_sign_up_ui/views/pages/product_discription/product_discription_page.dart';
 
@@ -34,9 +29,9 @@ class _HomePageState extends State<HomePage> {
           actions: [
             IconButton(
                 onPressed: (){
-                  Get.to(ShowCartPage());
+                  Get.to(const ShowCartPage());
                 },
-                icon: Icon(Icons.shopping_cart,color: Colors.white,size: 35,))
+                icon: const Icon(Icons.shopping_cart,color: Colors.white,size: 35,))
           ],
         ),
         body: Obx(
