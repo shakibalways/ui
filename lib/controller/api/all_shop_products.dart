@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:splash_login_sign_up_ui/model/product.dart';
 
-import 'api_url.dart';
+
 import 'package:http/http.dart' as http;
 
 class AllShopProducts {

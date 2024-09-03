@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'package:splash_login_sign_up_ui/controller/api/api_url.dart';
 import 'package:splash_login_sign_up_ui/model/product_discription.dart';
 import 'package:http/http.dart' as http;
 

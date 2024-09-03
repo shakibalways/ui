@@ -2,9 +2,6 @@ import 'dart:convert';
 import 'dart:developer';
 
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:splash_login_sign_up_ui/controller/api/api_url.dart';
 import 'package:splash_login_sign_up_ui/local%20database/secure_storage.dart';
 import 'package:splash_login_sign_up_ui/model/show_product_cart.dart';
 import 'package:http/http.dart' as http;
