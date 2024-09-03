@@ -8,7 +8,7 @@ import 'package:splash_login_sign_up_ui/local%20database/secure_storage.dart';
 class DeleteFromCartService {
   static Future<bool> cartService({required int id}) async {
     try {
-      Uri url = Uri.parse(ApiUrl.deleteFromCartUrl);
+      Uri url = Uri.parse("ApiUrl.deleteFromCartUrl");
       String token = await LocalStorage().readData(key: "token") ?? "";
       var body = {"product_id": id};
 

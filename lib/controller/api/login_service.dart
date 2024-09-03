@@ -10,7 +10,7 @@ class LoginService {
   static Future<bool> getLogin(
       {required String email, required String password}) async {
     try {
-      Uri url = Uri.parse(ApiUrl.signInUrl);
+      Uri url = Uri.parse("ApiUrl.signInUrl");
       Map<String, String> headers = {
         "Content-Type": "application/json",
         "Accept": "application/json"

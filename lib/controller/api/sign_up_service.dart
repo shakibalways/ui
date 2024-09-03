@@ -11,7 +11,7 @@ class SignUpService{
 
 static Future<bool> signUpService({required Map<String,dynamic> data})async{
   try{
-    Uri url = Uri.parse(ApiUrl.signUpUrl);
+    Uri url = Uri.parse("ApiUrl.signUpUrl");
     Map<String, String> headers = {
       "Content-Type": "application/json",
       "Accept": "application/json"

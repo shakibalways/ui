@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
 class AddToCartService {
   static Future<bool> addToCartService({required int id}) async {
     try {
-      Uri url = Uri.parse(ApiUrl.addToCartProduct);
+      Uri url = Uri.parse("ApiUrl.addToCartProduct");
       String token =  await  LocalStorage().readData(key: "token") ?? "";
       var header =  {
         "Content-Type": "application/json",

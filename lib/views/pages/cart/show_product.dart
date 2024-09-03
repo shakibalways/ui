@@ -21,11 +21,11 @@ class ShowCartPage extends StatelessWidget {
       ),
       body: Obx(
         () => showCartController.isLoading.isTrue
-            ? Center(
+            ? const Center(
                 child: CircularProgressIndicator(),
               )
             : showCartController.productCart!.isEmpty
-                ? Center(
+                ? const Center(
                     child: Text(
                       "Empty",
                       style:
@@ -36,7 +36,11 @@ class ShowCartPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Item:${showCartController.productCart?.length}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
+                        Text(
+                          "Item:${showCartController.productCart?.length}",
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 22),
+                        ),
                         ListView.builder(
                             shrinkWrap: true,
                             itemCount: showCartController.productCart?.length,
@@ -46,24 +50,27 @@ class ShowCartPage extends StatelessWidget {
                                 height: 180,
                                 child: Card(
                                   child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 15),
                                     child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.end,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.end,
                                       children: [
                                         Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
                                             Image.network(
-                                              "${ApiUrl.baseIP}/${data?.productImage}",
+                                              "${"ApiUrl.baseIP"}/${data?.productImage}",
                                               height: 120,
                                               width: 120,
                                               fit: BoxFit.fitHeight,
                                             ),
                                           ],
                                         ),
-                                         Column(
+                                        Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           mainAxisAlignment:
@@ -71,19 +78,19 @@ class ShowCartPage extends StatelessWidget {
                                           children: [
                                             Text(
                                               "${data?.productName?.en}",
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 16),
                                             ),
                                             Text(
                                               "${data?.discountPrice} ৳",
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 16),
                                             ),
                                             Text(
                                               "${data?.salePrice} ৳",
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 18,
                                                   color: Colors.deepOrange),
@@ -114,22 +121,23 @@ class ShowCartPage extends StatelessWidget {
                                                   color: Colors.deepOrange,
                                                   borderRadius:
                                                       BorderRadius.circular(8)),
-                                              child:  Center(
+                                              child: Center(
                                                   child: IconButton(
-                                                      onPressed: (){
-                                                        showCartController.qty.value++;
-
+                                                      onPressed: () {
+                                                        showCartController
+                                                            .qty.value++;
                                                       },
-                                                      icon: Icon(Icons.add))),
+                                                      icon: const Icon(Icons.add))),
                                             ),
-                                             Obx(()=>
-                                               Text(
+                                            Obx(
+                                              () => Text(
                                                 "${showCartController.qty.value}",
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                     fontSize: 18,
-                                                    fontWeight: FontWeight.bold),
-                                                                                           ),
-                                             ),
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                            ),
                                             Container(
                                               height: 35,
                                               width: 35,
@@ -137,16 +145,22 @@ class ShowCartPage extends StatelessWidget {
                                                   color: Colors.deepOrange,
                                                   borderRadius:
                                                       BorderRadius.circular(8)),
-                                              child:  Center(
+                                              child: Center(
                                                   child: IconButton(
-                                                      onPressed: ()async{
-                                                        if (showCartController.qty.value > 1) {
-                                                          showCartController .qty.value --;
+                                                      onPressed: () async {
+                                                        if (showCartController
+                                                                .qty.value >
+                                                            1) {
+                                                          showCartController
+                                                              .qty.value--;
                                                         } else {
-                                                           Get.snackbar("Message", "Minimum quantity should be 1");
+                                                          Get.snackbar(
+                                                              "Message",
+                                                              "Minimum quantity should be 1");
                                                         }
                                                       },
-                                                      icon: Icon(Icons.remove))),
+                                                      icon:
+                                                          const Icon(Icons.remove))),
                                             ),
                                           ],
                                         )

@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 class ProductDiscription {
   static Future<ProductDetails?> productDiscription({required int id}) async {
     try {
-      Uri url = Uri.parse("${ApiUrl.productDetailsUrl}/$id");
+      Uri url = Uri.parse("${"ApiUrl.productDetailsUrl"}/$id");
       var response = await http.get(url);
       if (response.statusCode == 200) {
        ProductDiscriptionModel data = ProductDiscriptionModel.fromJson(jsonDecode(response.body));

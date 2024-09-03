@@ -34,7 +34,7 @@ class ProductDescriptionPage extends StatelessWidget {
         ),
         body: Obx(
           () => productDescriptionController.isLoading.isTrue
-              ? Center(
+              ? const Center(
                   child: CircularProgressIndicator(),
                 )
               : Padding(
@@ -56,7 +56,8 @@ class ProductDescriptionPage extends StatelessWidget {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Image.network(
-                                "${ApiUrl.baseIP}/${productDescriptionController.image[index]}",
+
+                                "${"ApiUrl.baseIP"}/${productDescriptionController.image[index]}",
                                 height: 300,
                                 fit: BoxFit.fitHeight,
                               ),
@@ -121,14 +122,14 @@ class ProductDescriptionPage extends StatelessWidget {
                           )
                         ],
                       ),
-                      Text(
+                      const Text(
                         "Discription:",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 22),
                       ),
                       Text(
                           "${productDescriptionController.productDetails?.description?.en ?? ""}"),
-                      Spacer(),
+                      const Spacer(),
                       GestureDetector(
                         onTap: ()async{
                       await productDescriptionController.addToCartFun(id: id);
@@ -142,7 +143,7 @@ class ProductDescriptionPage extends StatelessWidget {
                             color: Colors.deepOrange,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Add To Cart",
                               style: TextStyle(
@@ -153,7 +154,7 @@ class ProductDescriptionPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 50,
                       ),
                     ],

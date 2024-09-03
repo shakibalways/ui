@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 class AllShopProducts {
   static Future<List<Products>> allShopProducts() async {
     try {
-      Uri url = Uri.parse(ApiUrl.productUrl);
+      Uri url = Uri.parse("ApiUrl.productUrl");
       var response = await http.get(url);
       if (response.statusCode == 200) {
         var decodeData = jsonDecode(response.body);
