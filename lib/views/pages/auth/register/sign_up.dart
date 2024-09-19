@@ -36,7 +36,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                height: 30,
+                height: 30
               ),
               Form(
                 key: signUpController.formKey,
