@@ -72,7 +72,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           }
                           signUpController.signUpFun();
                         })
-                    : const SameButton(),
+                    : const SameButton()
               ),
             ],
           ),
