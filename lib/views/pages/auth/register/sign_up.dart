@@ -46,9 +46,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     const SizedBox(height: 20),
                     UpPassField(
                         controller: signUpController.passwordController),
-                    const SizedBox(
-                      height: 20
-                    ),
+                    const SizedBox(height: 20),
                     UpConfirmPaasField(
                         controller: signUpController.confirmPassController),
                   ],
