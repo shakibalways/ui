@@ -41,13 +41,9 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: Column(
                   children: [
                     UpEmailField(controller: signUpController.emailController),
-                    const SizedBox(
-                      height: 20
-                    ),
+                    const SizedBox(height: 20),
                     UpPhoneField(controller: signUpController.phoneController),
-                    const SizedBox(
-                      height: 20
-                    ),
+                    const SizedBox(height: 20),
                     UpPassField(
                         controller: signUpController.passwordController),
                     const SizedBox(
