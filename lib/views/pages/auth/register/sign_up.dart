@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:splash_login_sign_up_ui/component/my_button.dart';
@@ -61,9 +60,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 40
-              ),
+              const SizedBox(height: 40),
               Obx(
                 () => signUpController.isLoading.isFalse
                     ? MyButton(
