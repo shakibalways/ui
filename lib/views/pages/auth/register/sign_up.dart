@@ -42,11 +42,11 @@ class _SignUpPageState extends State<SignUpPage> {
                   children: [
                     UpEmailField(controller: signUpController.emailController),
                     const SizedBox(
-                      height: 20,
+                      height: 20
                     ),
                     UpPhoneField(controller: signUpController.phoneController),
                     const SizedBox(
-                      height: 20,
+                      height: 20
                     ),
                     UpPassField(
                         controller: signUpController.passwordController),
