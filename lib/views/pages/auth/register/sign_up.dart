@@ -35,9 +35,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     fontSize: 25,
                     fontWeight: FontWeight.bold),
               ),
-              const SizedBox(
-                height: 30
-              ),
+              const SizedBox(height: 30),
               Form(
                 key: signUpController.formKey,
                 child: Column(
@@ -61,19 +59,17 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
               const SizedBox(height: 40),
-              Obx(
-                () => signUpController.isLoading.isFalse
-                    ? MyButton(
-                        text: "Sign Up",
-                        onTap: () {
-                          if (!signUpController.formKey.currentState!
-                              .validate()) {
-                            return;
-                          }
-                          signUpController.signUpFun();
-                        })
-                    : const SameButton()
-              ),
+              Obx(() => signUpController.isLoading.isFalse
+                  ? MyButton(
+                      text: "Sign Up",
+                      onTap: () {
+                        if (!signUpController.formKey.currentState!
+                            .validate()) {
+                          return;
+                        }
+                        signUpController.signUpFun();
+                      })
+                  : const SameButton()),
             ],
           ),
         ),
