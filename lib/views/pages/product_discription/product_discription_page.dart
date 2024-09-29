@@ -118,7 +118,7 @@ class ProductDescriptionPage extends StatelessWidget {
                             fontWeight: FontWeight.bold, fontSize: 22),
                       ),
                       Text(
-                          "${productDescriptionController.productDetails?.description?.en ?? ""}"),
+                          productDescriptionController.productDetails?.description?.en ?? ""),
                       const Spacer(),
                       GestureDetector(
                         onTap: () async {
