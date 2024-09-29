@@ -72,7 +72,7 @@ class SplashScreen extends StatelessWidget {
                           },
                         ),
                         const SizedBox(
-                          height: 30,
+                          height: 30
                         ),
                         MyButton(
                           text: 'Sign Up',
