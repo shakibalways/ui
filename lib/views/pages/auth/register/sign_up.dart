@@ -53,17 +53,20 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
               const SizedBox(height: 40),
-              Obx(() => signUpController.isLoading.isFalse
-                  ? MyButton(
-                      text: "Sign Up",
-                      onTap: () {
-                        if (!signUpController.formKey.currentState!
-                            .validate()) {
-                          return;
-                        }
-                        signUpController.signUpFun();
-                      },)
-                  : const SameButton(),),
+              Obx(
+                () => signUpController.isLoading.isFalse
+                    ? MyButton(
+                        text: "Sign Up",
+                        onTap: () {
+                          if (!signUpController.formKey.currentState!
+                              .validate()) {
+                            return;
+                          }
+                          signUpController.signUpFun();
+                        },
+                      )
+                    : const SameButton(),
+              ),
             ],
           ),
         ),
