@@ -13,8 +13,9 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SplashController splashScreenController = Get.put(SplashController());
     return Scaffold(
-        backgroundColor: RColors.bColors,
-        body: Obx(() => splashScreenController.isLoading.isFalse
+      backgroundColor: RColors.bColors,
+      body: Obx(
+        () => splashScreenController.isLoading.isFalse
             ? Stack(
                 alignment: Alignment.centerLeft,
                 children: [
@@ -87,6 +88,8 @@ class SplashScreen extends StatelessWidget {
               )
             : const Center(
                 child: CircularProgressIndicator(),
-              ),),);
+              ),
+      ),
+    );
   }
 }
