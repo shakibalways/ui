@@ -109,7 +109,7 @@ class ShowCartPage extends StatelessWidget {
                                               Icons.delete,
                                               color: Colors.red,
                                               size: 30,
-                                            )),
+                                            ),),
                                         Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
