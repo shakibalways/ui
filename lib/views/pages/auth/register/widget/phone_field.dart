@@ -17,8 +17,9 @@ class UpPhoneField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: "phone",
         enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: RColors.bColors),
-            borderRadius: BorderRadius.circular(15),),
+          borderSide: const BorderSide(color: RColors.bColors),
+          borderRadius: BorderRadius.circular(15),
+        ),
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: RColors.bColor),
           borderRadius: BorderRadius.circular(15),
