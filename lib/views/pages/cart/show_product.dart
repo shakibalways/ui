@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 import 'package:splash_login_sign_up_ui/controller/getx/show_product_cart.dart';
 
-
 class ShowCartPage extends StatelessWidget {
   const ShowCartPage({super.key});
 
@@ -98,18 +97,19 @@ class ShowCartPage extends StatelessWidget {
                                           ],
                                         ),
                                         IconButton(
-                                            onPressed: () {
-                                              showCartController.deleteFromCart(
-                                                  id: showCartController
-                                                          .productCart?[index]
-                                                          .productId ??
-                                                      0);
-                                            },
-                                            icon: const Icon(
-                                              Icons.delete,
-                                              color: Colors.red,
-                                              size: 30,
-                                            ),),
+                                          onPressed: () {
+                                            showCartController.deleteFromCart(
+                                                id: showCartController
+                                                        .productCart?[index]
+                                                        .productId ??
+                                                    0);
+                                          },
+                                          icon: const Icon(
+                                            Icons.delete,
+                                            color: Colors.red,
+                                            size: 30,
+                                          ),
+                                        ),
                                         Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
@@ -127,7 +127,8 @@ class ShowCartPage extends StatelessWidget {
                                                         showCartController
                                                             .qty.value++;
                                                       },
-                                                      icon: const Icon(Icons.add))),
+                                                      icon: const Icon(
+                                                          Icons.add))),
                                             ),
                                             Obx(
                                               () => Text(
@@ -159,8 +160,8 @@ class ShowCartPage extends StatelessWidget {
                                                               "Minimum quantity should be 1");
                                                         }
                                                       },
-                                                      icon:
-                                                          const Icon(Icons.remove))),
+                                                      icon: const Icon(
+                                                          Icons.remove))),
                                             ),
                                           ],
                                         )
@@ -169,7 +170,7 @@ class ShowCartPage extends StatelessWidget {
                                   ),
                                 ),
                               );
-                            })
+                            },)
                       ],
                     ),
                   ),
