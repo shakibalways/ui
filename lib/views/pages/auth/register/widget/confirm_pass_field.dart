@@ -24,14 +24,14 @@ class UpConfirmPaasField extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
       ),
-      validator: (value) {
-        // if (value == null || value == '') {
-        //   return "confirm_pass_error".tr;
-        // } else if (value.toString() != password) {
-        //   return "pass_did_not_match_error".tr;
-        // }
-        // return null;
-      },
+      // validator: (value) {
+      //   // if (value == null || value == '') {
+      //   //   return "confirm_pass_error".tr;
+      //   // } else if (value.toString() != password) {
+      //   //   return "pass_did_not_match_error".tr;
+      //   // }
+      //   // return null;
+      // },
     );
   }
 }
