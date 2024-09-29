@@ -21,7 +21,7 @@ class UpConfirmPaasField extends StatelessWidget {
             borderRadius: BorderRadius.circular(15)),
         focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColor),
-            borderRadius: BorderRadius.circular(15)),
+            borderRadius: BorderRadius.circular(15),),
       ),
       validator: (value){
         // if (value == null || value == '') {
