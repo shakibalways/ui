@@ -83,7 +83,7 @@ class ProductDescriptionPage extends StatelessWidget {
                                   Text(
                                       "(0/${productDescriptionController.productDetails?.rating ?? 0})"),
                                   const SizedBox(
-                                    width: 7,
+                                    width: 7
                                   ),
                                   Text(
                                       "(${productDescriptionController.productDetails?.review ?? 0} Review)"),
