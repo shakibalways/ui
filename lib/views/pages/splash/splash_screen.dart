@@ -64,9 +64,7 @@ class SplashScreen extends StatelessWidget {
                               fontSize: 18,
                               color: Colors.white),
                         ),
-                        const SizedBox(
-                          height: 40
-                        ),
+                        const SizedBox(height: 40),
                         MyButton(
                           text: 'Login',
                           onTap: () {
