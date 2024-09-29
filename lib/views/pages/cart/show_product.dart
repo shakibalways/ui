@@ -161,7 +161,7 @@ class ShowCartPage extends StatelessWidget {
                                                         Icons.remove))),
                                           ),
                                         ],
-                                      )
+                                      ),
                                     ],
                                   ),
                                 ),
