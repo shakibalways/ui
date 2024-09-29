@@ -17,14 +17,15 @@ class UpPassField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: "password",
         enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: RColors.bColors),
-            borderRadius: BorderRadius.circular(15),),
+          borderSide: const BorderSide(color: RColors.bColors),
+          borderRadius: BorderRadius.circular(15),
+        ),
         focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColor),
             borderRadius: BorderRadius.circular(15)),
       ),
-      validator: (value){
-        if(value == "" || value ==null){
+      validator: (value) {
+        if (value == "" || value == null) {
           return "enter your valid password";
         }
         return null;
