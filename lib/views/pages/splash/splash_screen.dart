@@ -57,7 +57,7 @@ class SplashScreen extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 20
                         ),
                         const Text(
                           "Everything start from here",
