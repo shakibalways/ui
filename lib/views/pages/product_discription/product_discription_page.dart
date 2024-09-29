@@ -150,6 +150,6 @@ class ProductDescriptionPage extends StatelessWidget {
                     ],
                   ),
                 ),
-        ));
+        ),);
   }
 }
