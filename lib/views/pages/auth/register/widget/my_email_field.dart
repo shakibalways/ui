@@ -20,7 +20,7 @@ class UpEmailField extends StatelessWidget {
             borderSide: BorderSide(color: RColors.bColors),
             borderRadius: BorderRadius.circular(15)),
         focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: RColors.bColor),
+            borderSide: const BorderSide(color: RColors.bColor),
             borderRadius: BorderRadius.circular(15)),
       ),
       validator: (value){
