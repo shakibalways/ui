@@ -109,7 +109,7 @@ class ProductDescriptionPage extends StatelessWidget {
                               ),
                               Text("${productData.disPrice ?? ""}")
                             ],
-                          )
+                          ),
                         ],
                       ),
                       const Text(
