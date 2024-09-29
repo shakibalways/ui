@@ -20,10 +20,11 @@ class UpConfirmPaasField extends StatelessWidget {
             borderSide: const BorderSide(color: RColors.bColors),
             borderRadius: BorderRadius.circular(15)),
         focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: RColors.bColor),
-            borderRadius: BorderRadius.circular(15),),
+          borderSide: const BorderSide(color: RColors.bColor),
+          borderRadius: BorderRadius.circular(15),
+        ),
       ),
-      validator: (value){
+      validator: (value) {
         // if (value == null || value == '') {
         //   return "confirm_pass_error".tr;
         // } else if (value.toString() != password) {
