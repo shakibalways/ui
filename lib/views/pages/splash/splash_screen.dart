@@ -71,9 +71,7 @@ class SplashScreen extends StatelessWidget {
                             Get.to(const LogInPage());
                           },
                         ),
-                        const SizedBox(
-                          height: 30
-                        ),
+                        const SizedBox(height: 30),
                         MyButton(
                           text: 'Sign Up',
                           color: RColors.bColor,
