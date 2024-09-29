@@ -22,7 +22,7 @@ class UpPassField extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColor),
-            borderRadius: BorderRadius.circular(15)),
+            borderRadius: BorderRadius.circular(15),),
       ),
       validator: (value) {
         if (value == "" || value == null) {
