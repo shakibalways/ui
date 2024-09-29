@@ -85,7 +85,7 @@ class ProductDescriptionPage extends StatelessWidget {
                                       color: Colors.amber,
                                     ),
                                   const SizedBox(
-                                    width: 7,
+                                    width: 7
                                   ),
                                   Text(
                                       "(0/${productDescriptionController.productDetails?.rating ?? 0})"),
