@@ -18,7 +18,7 @@ class UpPassField extends StatelessWidget {
         hintText: "password",
         enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColors),
-            borderRadius: BorderRadius.circular(15)),
+            borderRadius: BorderRadius.circular(15),),
         focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColor),
             borderRadius: BorderRadius.circular(15)),
