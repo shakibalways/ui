@@ -17,14 +17,16 @@ class UpEmailField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: "E-mail",
         enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: RColors.bColors),
-            borderRadius: BorderRadius.circular(15),),
+          borderSide: const BorderSide(color: RColors.bColors),
+          borderRadius: BorderRadius.circular(15),
+        ),
         focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: RColors.bColor),
-            borderRadius: BorderRadius.circular(15),),
+          borderSide: const BorderSide(color: RColors.bColor),
+          borderRadius: BorderRadius.circular(15),
+        ),
       ),
-      validator: (value){
-        if(value == "" || value ==null){
+      validator: (value) {
+        if (value == "" || value == null) {
           return "email can't be empty";
         } else if (!(value.toString().contains(".") ||
             value.toString().contains("@"))) {
