@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:splash_login_sign_up_ui/controller/getx/product_discription.dart';
@@ -55,7 +51,6 @@ class ProductDescriptionPage extends StatelessWidget {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Image.network(
-
                                 "${"ApiUrl.baseIP"}/${productDescriptionController.image[index]}",
                                 height: 300,
                                 fit: BoxFit.fitHeight,
@@ -84,9 +79,7 @@ class ProductDescriptionPage extends StatelessWidget {
                                       Icons.star,
                                       color: Colors.amber,
                                     ),
-                                  const SizedBox(
-                                    width: 7
-                                  ),
+                                  const SizedBox(width: 7),
                                   Text(
                                       "(0/${productDescriptionController.productDetails?.rating ?? 0})"),
                                   const SizedBox(
@@ -130,10 +123,10 @@ class ProductDescriptionPage extends StatelessWidget {
                           "${productDescriptionController.productDetails?.description?.en ?? ""}"),
                       const Spacer(),
                       GestureDetector(
-                        onTap: ()async{
-                      await productDescriptionController.addToCartFun(id: id);
-                      Get.back();
-
+                        onTap: () async {
+                          await productDescriptionController.addToCartFun(
+                              id: id);
+                          Get.back();
                         },
                         child: Container(
                           height: 50,
