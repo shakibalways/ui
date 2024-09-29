@@ -17,7 +17,7 @@ class UpEmailField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: "E-mail",
         enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: RColors.bColors),
+            borderSide: const BorderSide(color: RColors.bColors),
             borderRadius: BorderRadius.circular(15)),
         focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: RColors.bColor),
