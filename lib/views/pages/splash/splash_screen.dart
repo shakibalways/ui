@@ -79,9 +79,7 @@ class SplashScreen extends StatelessWidget {
                             Get.to(const SignUpPage());
                           },
                         ),
-                        const SizedBox(
-                          height: 40
-                        ),
+                        const SizedBox(height: 40),
                       ],
                     ),
                   ),
